@@ -6,14 +6,13 @@ function init(){
   $('.list-item:last').css({
     border:'1px solid #eee'
   });
-  $('#form-container > form > input').focusin(function(){
+  $('#form-container > form > input').focus(function(){
     $(this).css({
       border:'1px solid #84abda'
     });
-  });
-  $('#form-container > form > input').focusout(function(){
+  }).blur(function(){
     $(this).css({
-      border: '1px solid #c7c7c7'
+      border: ''
     });
   });
 }
